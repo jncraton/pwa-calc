@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Calculator</title>
+    
+    <link rel="stylesheet" type="text/css" href="base.css" media="all">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <textarea id="op" placeholder="Expression"></textarea>
+    <span id="result"></span>
+
+    <script>
+      document.getElementById('op').addEventListener('input', e => {
+        document.getElementById('result').textContent = eval(e.target.value)
+      })
+
+      navigator.serviceWorker.register('service-worker.js')            
+    </script>
+  </body>
+</html>
