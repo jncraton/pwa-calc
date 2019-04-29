@@ -1,0 +1,21 @@
+* {
+  margin:0;
+  padding:0;
+  font-size:72px;
+  font-family:sans;
+}
+
+body {
+  max-width:600px;
+  margin:auto;
+  padding:20px;
+}
+
+textarea, #result {
+  width:100%;
+  display:inline-block;
+}
+
+#result {
+  text-align:right;
+}
